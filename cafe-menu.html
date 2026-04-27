@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カフェメニュー | 高原カフェ – ワサマタハッテ</title>
+  <meta name="description" content="ワサマタハッテカフェメニュー。手作りパン・地元野菜を使った料理。コーヒー、ドリンク、デザート。標高1150mの景色を眺めながら。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Playfair+Display:wght@400;600&family=Zen+Old+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <meta property="og:url" content="https://wasamata-hutte.com/cafe-menu.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="カフェメニュー | 高原カフェ – ワサマタハッテ">
+  <meta property="og:description" content="ワサマタハッテカフェメニュー。手作りパン・地元野菜を使った料理。">
+  <meta property="og:image" content="https://wasamata-hutte.com/ロゴ白.png">
+</head>
+<body>
+
+  <!-- ========== 右サイドバー ========== -->
+  <aside class="sidebar">
+    <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="https://www.instagram.com/wasamata__hutte/?hl=ja" class="sidebar-icon" aria-label="Instagram" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5"/>
+        <circle cx="12" cy="12" r="5"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+    </a>
+
+    <a href="#reserve" class="sidebar-booking">
+      <span class="sidebar-booking-en">BOOKING</span>
+      <span class="sidebar-booking-ja">予約をする</span>
+    </a>
+  </aside>
+
+  <!-- ========== ナビゲーション（オーバーレイ） ========== -->
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#business-hours">営業情報</a></li>
+      <li><a href="index.html#reserve">ご予約</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="cafe-menu.html">Cafe</a></li>
+      <li><a href="access-guide.html">アクセス</a></li>
+      <li><a href="about.html">背景情報</a></li>
+      <li><a href="faq.html">Q&A</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ========== ヒーローセクション ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-slideshow">
+      <img src="images/20230901-129.jpg" alt="" class="hero-slide active">
+      <img src="images/20230901-157.jpg" alt="" class="hero-slide">
+      <img src="images/20230901-182.jpg" alt="" class="hero-slide">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title"><img src="ロゴ白.png" alt="WASAMATA HUTTE" class="hero-logo"></h1>
+      <p class="hero-subtitle">Cafe</p>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== カフェ概要 ========== -->
+  <section class="about" id="overview">
+    <div class="container">
+      <div class="section-label fade-up">Cafe</div>
+      <h2 class="section-title fade-up">高原の恵みを味わう</h2>
+
+      <div class="about-intro fade-up">
+        <p>標高 1150m の高原に佇むカフェ。手作りパン、地元野菜を使ったメニュー。朝日を見ながらの朝食、星空の下での夜カフェ。自然と調和した食の時間をお過ごしください。</p>
+      </div>
+
+      <div class="about-grid fade-up">
+        <div class="about-image">
+          <img src="images/20230901-129.jpg" alt="カフェの内観">
+        </div>
+        <div class="about-text">
+          <p>地元の小麦粉を使った手作りパン、季節の野菜を活かしたスープ、こだわりのコーヒーやハーブティー。登山の帰りに、キャンプ中のブレイクタイムに、リラックスする時間に。</p>
+          <p>窓からは大台ヶ原の絶景が広がり、朝には朝焼け、昼には深緑の山々、夜には星空が見えます。時間とともに変わる景色を楽しみながら、自然の中で心と体を満たす食事をお楽しみください。</p>
+        </div>
+      </div>
+
+      <div class="feature-cards">
+        <div class="feature-card fade-up" style="--delay: 0s">
+          <div class="feature-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 32 L32 16 L44 32 L44 48 L20 48 Z"/>
+              <path d="M28 32 L36 32 L36 48"/>
+            </svg>
+          </div>
+          <h3>手作りパン</h3>
+          <p>毎朝焼き上げる、新鮮でおいしい</p>
+        </div>
+        <div class="feature-card fade-up" style="--delay: 0.1s">
+          <div class="feature-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="20" y="16" width="24" height="32" rx="2"/>
+              <path d="M28 24 L36 24"/>
+            </svg>
+          </div>
+          <h3>地元野菜</h3>
+          <p>季節の野菜を使った、新鮮メニュー</p>
+        </div>
+        <div class="feature-card fade-up" style="--delay: 0.2s">
+          <div class="feature-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="32" cy="28" r="12"/>
+              <path d="M32 40 L32 50 M26 50 L38 50"/>
+            </svg>
+          </div>
+          <h3>こだわりコーヒー</h3>
+          <p>自家焙煎、豆から丁寧に淹れたコーヒー</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== メニュー ========== -->
+  <section class="about" id="menu" style="background: var(--color-bg-alt); padding: 80px 0;">
+    <div class="container">
+      <div class="section-label fade-up">Menu</div>
+      <h2 class="section-title fade-up">メニュー</h2>
+
+      <div style="margin: 48px 0;">
+        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">ドリンク</h3>
+        <div style="display: grid; gap: 16px;">
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>コーヒーとドライクッキー</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥600</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 4px;">ホット/アイス</p>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>紅茶とドライのクッキー</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥500</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 4px;">ホット/アイス</p>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>自家製ジンジャーエール</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥700</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 4px;">ホット/アイス</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin: 48px 0;">
+        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">アルコール</h3>
+        <div style="display: grid; gap: 16px;">
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>ハートワイン&トレイミックス</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,000</span>
+            </div>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>グラスワイン白</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥600</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin: 48px 0;">
+        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">スウィーツ</h3>
+        <div style="display: grid; gap: 16px;">
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>スウィーツドリンクセット</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,300</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin: 48px 0;">
+        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">フローズンデザート</h3>
+        <div style="display: grid; gap: 16px;">
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>アイスクリームと手作りのクッキー</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥500</span>
+            </div>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>かき氷</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥500</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 4px;">イチゴ・メロン・ブルーハワイ</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin: 48px 0;">
+        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">フード</h3>
+        <div style="display: grid; gap: 16px;">
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>味噌煮込みうどん</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
+            </div>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>塩焦香のうどん</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
+            </div>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>カレーうどん</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
+            </div>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>ミートソースパスタ</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
+            </div>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>バターチキンカレー</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
+            </div>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>チキンビリヤニカレー</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,300</span>
+            </div>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>パスタ（カレードリンクセット）</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,500</span>
+            </div>
+          </div>
+          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>ツリーザ盛り合わせ</strong>
+              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 営業情報 ========== -->
+  <section class="about" id="info" style="color: rgba(255,255,255,0.8); background: var(--color-dark); padding: 80px 0;">
+    <div class="container">
+      <div class="section-label light fade-up">Info</div>
+      <h2 class="section-title light fade-up">営業時間・アクセス</h2>
+
+      <div class="about-intro light fade-up" style="color: rgba(255,255,255,0.8);">
+        <p style="margin-bottom: 24px;"><strong>営業時間:</strong></p>
+        <p style="margin-bottom: 12px;">朝食営業: 7:00～10:00（要予約）</p>
+        <p style="margin-bottom: 24px;">カフェ営業: 10:00～18:00</p>
+        
+        <p style="margin-bottom: 24px;"><strong>定休日:</strong> 火曜日</p>
+        
+        <p><strong>アクセス:</strong> メインロッジから徒歩 5 分。キャンプフィールドからも近く、登山帰りのコーヒーブレイクに最適。</p>
+      </div>
+
+      <div style="margin-top: 32px; text-align: center;">
+        <p style="font-size: 1rem; margin: 12px 0; color: rgba(255,255,255,0.8);">朝食の予約は前日 18:00 までにお願いします</p>
+        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">0XXX-XX-XXXX（フロント）</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== フッター ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 WASAMATA HUTTE. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="hutte-details.html">Facilities</a>
+        <a href="campsite.html">Campsite</a>
+        <a href="cafe-menu.html">Cafe</a>
+        <a href="access-guide.html">Access</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

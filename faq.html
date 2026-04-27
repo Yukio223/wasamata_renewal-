@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>よくある質問 | 予約・施設 – ワサマタハッテ</title>
+  <meta name="description" content="ワサマタハッテよくある質問。予約方法、チェックイン時間、食事、施設、駐車場、冬季営業について。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Playfair+Display:wght@400;600&family=Zen+Old+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <meta property="og:url" content="https://wasamata-hutte.com/faq.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="よくある質問 | 予約・施設 – ワサマタハッテ">
+  <meta property="og:description" content="ワサマタハッテよくある質問。予約方法、チェックイン時間、食事。">
+  <meta property="og:image" content="https://wasamata-hutte.com/ロゴ白.png">
+</head>
+<body>
+
+  <!-- ========== 右サイドバー ========== -->
+  <aside class="sidebar">
+    <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="https://www.instagram.com/wasamata__hutte/?hl=ja" class="sidebar-icon" aria-label="Instagram" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5"/>
+        <circle cx="12" cy="12" r="5"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+    </a>
+
+    <a href="#reserve" class="sidebar-booking">
+      <span class="sidebar-booking-en">BOOKING</span>
+      <span class="sidebar-booking-ja">予約をする</span>
+    </a>
+  </aside>
+
+  <!-- ========== ナビゲーション（オーバーレイ） ========== -->
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#business-hours">営業情報</a></li>
+      <li><a href="index.html#reserve">ご予約</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="cafe-menu.html">Cafe</a></li>
+      <li><a href="access-guide.html">アクセス</a></li>
+      <li><a href="about.html">背景情報</a></li>
+      <li><a href="faq.html">Q&A</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ========== ヒーローセクション ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-slideshow">
+      <img src="images/20230901-98.jpg" alt="" class="hero-slide active">
+      <img src="images/20230901-165.jpg" alt="" class="hero-slide">
+      <img src="images/20230901-129.jpg" alt="" class="hero-slide">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title"><img src="ロゴ白.png" alt="WASAMATA HUTTE" class="hero-logo"></h1>
+      <p class="hero-subtitle">FAQ</p>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== Q&A 概要 ========== -->
+  <section class="about" id="overview">
+    <div class="container">
+      <div class="section-label fade-up">FAQ</div>
+      <h2 class="section-title fade-up">よくある質問</h2>
+
+      <div class="about-intro fade-up">
+        <p>WASAMATA HUTTEへのご来場についてよくお問い合わせいただく質問と回答をまとめました。ご不明な点やご質問がございましたら、お気軽にお問い合わせください。</p>
+      </div>
+
+      <div class="about-grid fade-up">
+        <div class="about-image">
+          <img src="images/20230901-135.jpg" alt="施設の全景">
+        </div>
+        <div class="about-text">
+          <p>標高1150mの高原に位置するワサマタハッテは、多くのご来場者様からご質問をいただきます。予約方法からアクセス、施設設備まで、様々なご質問にお答えしています。</p>
+          <p>ここに掲載されていないご質問やご不明な点については、お電話またはメールでお気軽にお問い合わせください。スタッフが丁寧にご対応いたします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Q&A セクション ========== -->
+  <section class="about" id="faqs" style="background: var(--color-bg-alt); padding: 80px 0;">
+    <div class="container">
+      <div class="section-label fade-up">Questions</div>
+      <h2 class="section-title fade-up">質問と回答</h2>
+
+      <div style="margin: 48px 0;">
+        <div style="display: grid; gap: 24px;">
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. 予約方法を教えてください</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. ご予約はお電話（0XXX-XX-XXXX）またはメール（info@wasamata-hutte.com）でお受けしています。宿泊日の 30 日前からのご予約をお勧めしておりますが、空室がある場合は当日のご予約も対応可能です。ご不明な点はお気軽にお問い合わせください。
+            </p>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. チェックイン・チェックアウト時間は？</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. チェックインは 15:00 から、チェックアウトは 10:00 です。早朝チェックイン（7:00～）または延長チェックアウト（～14:00）をご希望の場合は、ご予約時にお申し付けください。別料金が発生する場合がございます。
+            </p>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. 食事は提供されていますか？</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. 朝食と夕食の提供は行っていません。カフェでは 9:00～18:00 の営業で、飲み物や軽食をご提供しています。夕食は持ち込みまたはカフェのテイクアウトメニューをご利用ください。キャンプサイトに設営の場合は、持ち込みまたは調理施設をご利用いただけます。
+            </p>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. 施設・設備について教えてください</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. ロッジ・キャビン・テントサイトがあります。各施設には暖房・冷房が完備されており、共用施設として温水シャワー・トイレ・洗面所があります。詳細については施設詳細ページ（Facilities）をご参照ください。
+            </p>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. ペット同伴は可能ですか？</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. 申し訳ございません。現在、ペット同伴のご宿泊はお断りしております。ただし、介助犬など公的に認定された補助犬についてはご相談ください。
+            </p>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. 登山初心者でも利用できますか？</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. はい。ワサマタハッテは標高1150m に位置し、周辺の登山コースは初級～中級レベルが多いため、初心者の方もご利用いただけます。ただし、体力に応じて無理のないスケジュールをお勧めします。ご不安な場合はスタッフまでお気軽にお問い合わせください。
+            </p>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. 駐車場がありますか？駐車料金は？</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. メイン駐車場（30台）とキャンプフィールド駐車場（15台）がございます。宿泊・飲食ご利用者は無料、日帰り登山のお客様は ¥500/台 の料金をいただいています。詳細はアクセスページをご参照ください。
+            </p>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. キャンセル・変更について</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. ご予約の変更・キャンセルはお電話またはメールでお受けしています。キャンセル料金は、宿泊日の 7 日前からのキャンセルに対して発生します。詳細なキャンセルポリシーについては、ご予約時にお伝えします。
+            </p>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. 冬季の営業について</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. 冬季（11月～3月）でも営業していますが、積雪時は 4WD またはチェーン装備の持参をお願いしています。天候や積雪状況によっては、アクセスが困難になる場合がございます。冬期のご来場前に、必ずお電話でご確認ください。
+            </p>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-white); border-radius: 4px;">
+            <h3 style="font-family: var(--font-mincho); font-size: 1.1rem; margin-bottom: 12px; color: var(--color-text);">Q. 天候が悪い場合はどうなりますか？</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.7; margin: 0;">
+              A. 台風・豪雨・積雪などの悪天候時は、アクセス困難または営業休止となる場合がございます。ご来場前には必ずお電話でご確認をお願いします。緊急時の連絡先も事前にお知らせいたします。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== お問い合わせ ========== -->
+  <section class="about" id="contact" style="color: rgba(255,255,255,0.8); background: var(--color-dark); padding: 80px 0;">
+    <div class="container">
+      <div class="section-label light fade-up">Contact</div>
+      <h2 class="section-title light fade-up">ご不明な点がございましたら</h2>
+
+      <div class="about-intro light fade-up" style="color: rgba(255,255,255,0.8);">
+        <p>ここに掲載されていないご質問やご不明な点については、お気軽にお問い合わせください。スタッフが丁寧にご対応いたします。</p>
+      </div>
+
+      <div style="margin-top: 32px; text-align: center;">
+        <p style="font-size: 1rem; margin: 12px 0; color: rgba(255,255,255,0.8);">
+          <strong>電話でのお問い合わせ</strong><br/>
+          フロント（ロッジ）: 0XXX-XX-XXXX<br/>
+          営業時間: 9:00～17:00（年中無休）
+        </p>
+        <p style="font-size: 0.95rem; margin: 24px 0; color: rgba(255,255,255,0.8);">
+          <strong>メールでのお問い合わせ</strong><br/>
+          info@wasamata-hutte.com<br/>
+          <span style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">（通常 24 時間以内にご返信いたします）</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== フッター ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 WASAMATA HUTTE. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="hutte-details.html">Facilities</a>
+        <a href="campsite.html">Campsite</a>
+        <a href="cafe-menu.html">Cafe</a>
+        <a href="access-guide.html">Access</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
