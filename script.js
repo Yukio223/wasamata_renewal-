@@ -118,13 +118,34 @@ document.addEventListener('DOMContentLoaded', () => {
     img.parentElement.addEventListener('click', () => openLightbox(i));
   });
 
-  lightboxClose.addEventListener('click', closeLightbox);
-  lightboxPrev.addEventListener('click', showPrev);
-  lightboxNext.addEventListener('click', showNext);
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  if (lightboxPrev) lightboxPrev.addEventListener('click', showPrev);
+  if (lightboxNext) lightboxNext.addEventListener('click', showNext);
 
-  // ライトボックス外クリックで閉じる
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeLightbox();
-  });
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+
+  // sidebar色の自動切り替え（bg-alt セクション内は黒）
+  const hamburgerSpans = document.querySelectorAll('.hamburger span');
+  const sidebarIcon = document.querySelector('.sidebar-icon');
+  const body = document.body;
+
+  const bgAltObserver = new IntersectionObserver((entries) => {
+    let hasBgAlt = false;
+    entries.forEach(entry => {
+      if (entry.isIntersecting) hasBgAlt = true;
+    });
+
+    if (hasBgAlt) {
+      body.classList.add('in-bg-alt');
+    } else {
+      body.classList.remove('in-bg-alt');
+    }
+  }, { threshold: 0 });
+
+  document.querySelectorAll('.bg-alt').forEach(el => bgAltObserver.observe(el));
 
 });

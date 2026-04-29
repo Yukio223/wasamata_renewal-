@@ -3,20 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <style>
+    .hamburger span { background: white; }
+    .sidebar-icon { color: white; }
+  </style>
   <title>カフェメニュー | 高原カフェ – ワサマタハッテ</title>
   <meta name="description" content="ワサマタハッテカフェメニュー。手作りパン・地元野菜を使った料理。コーヒー、ドリンク、デザート。標高1150mの景色を眺めながら。">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=1778089200">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Playfair+Display:wght@400;600&family=Zen+Old+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
+  <script src="script.js?v=1778089200" defer></script>
   <meta property="og:url" content="https://wasamata-hutte.com/cafe-menu.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="カフェメニュー | 高原カフェ – ワサマタハッテ">
   <meta property="og:description" content="ワサマタハッテカフェメニュー。手作りパン・地元野菜を使った料理。">
   <meta property="og:image" content="https://wasamata-hutte.com/ロゴ白.png">
 </head>
-<body>
+<body class="page-cafe">
 
   <!-- ========== 右サイドバー ========== -->
   <aside class="sidebar">
@@ -127,181 +134,3 @@
   </section>
 
   <!-- ========== メニュー ========== -->
-  <section class="about" id="menu" style="background: var(--color-bg-alt); padding: 80px 0;">
-    <div class="container">
-      <div class="section-label fade-up">Menu</div>
-      <h2 class="section-title fade-up">メニュー</h2>
-
-      <div style="margin: 48px 0;">
-        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">ドリンク</h3>
-        <div style="display: grid; gap: 16px;">
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>コーヒーとドライクッキー</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥600</span>
-            </div>
-            <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 4px;">ホット/アイス</p>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>紅茶とドライのクッキー</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥500</span>
-            </div>
-            <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 4px;">ホット/アイス</p>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>自家製ジンジャーエール</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥700</span>
-            </div>
-            <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 4px;">ホット/アイス</p>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin: 48px 0;">
-        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">アルコール</h3>
-        <div style="display: grid; gap: 16px;">
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>ハートワイン&トレイミックス</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,000</span>
-            </div>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>グラスワイン白</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥600</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin: 48px 0;">
-        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">スウィーツ</h3>
-        <div style="display: grid; gap: 16px;">
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>スウィーツドリンクセット</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,300</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin: 48px 0;">
-        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">フローズンデザート</h3>
-        <div style="display: grid; gap: 16px;">
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>アイスクリームと手作りのクッキー</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥500</span>
-            </div>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>かき氷</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥500</span>
-            </div>
-            <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 4px;">イチゴ・メロン・ブルーハワイ</p>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin: 48px 0;">
-        <h3 style="font-family: var(--font-mincho); font-size: 1.3rem; margin-bottom: 24px; color: var(--color-text);">フード</h3>
-        <div style="display: grid; gap: 16px;">
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>味噌煮込みうどん</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
-            </div>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>塩焦香のうどん</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
-            </div>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>カレーうどん</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
-            </div>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>ミートソースパスタ</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
-            </div>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>バターチキンカレー</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
-            </div>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>チキンビリヤニカレー</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,300</span>
-            </div>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>パスタ（カレードリンクセット）</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,500</span>
-            </div>
-          </div>
-          <div style="padding: 16px; background: var(--color-white); border-radius: 4px;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <strong>ツリーザ盛り合わせ</strong>
-              <span style="color: var(--color-accent); font-weight: 600;">¥1,200</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 営業情報 ========== -->
-  <section class="about" id="info" style="color: rgba(255,255,255,0.8); background: var(--color-dark); padding: 80px 0;">
-    <div class="container">
-      <div class="section-label light fade-up">Info</div>
-      <h2 class="section-title light fade-up">営業時間・アクセス</h2>
-
-      <div class="about-intro light fade-up" style="color: rgba(255,255,255,0.8);">
-        <p style="margin-bottom: 24px;"><strong>営業時間:</strong></p>
-        <p style="margin-bottom: 12px;">朝食営業: 7:00～10:00（要予約）</p>
-        <p style="margin-bottom: 24px;">カフェ営業: 10:00～18:00</p>
-        
-        <p style="margin-bottom: 24px;"><strong>定休日:</strong> 火曜日</p>
-        
-        <p><strong>アクセス:</strong> メインロッジから徒歩 5 分。キャンプフィールドからも近く、登山帰りのコーヒーブレイクに最適。</p>
-      </div>
-
-      <div style="margin-top: 32px; text-align: center;">
-        <p style="font-size: 1rem; margin: 12px 0; color: rgba(255,255,255,0.8);">朝食の予約は前日 18:00 までにお願いします</p>
-        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">0XXX-XX-XXXX（フロント）</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== フッター ========== -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 WASAMATA HUTTE. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="hutte-details.html">Facilities</a>
-        <a href="campsite.html">Campsite</a>
-        <a href="cafe-menu.html">Cafe</a>
-        <a href="access-guide.html">Access</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
-    </div>
-  </footer>
-
-</body>
-</html>
