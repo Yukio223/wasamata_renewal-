@@ -1,0 +1,41 @@
+# Netlify Configuration for WASAMATA HUTTE
+
+[build]
+  # 静的サイト（ビルド不要）
+  publish = "."
+  command = ""
+
+# SPA フォールバック（index.html に統一）
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# キャッシュ制御ヘッダー
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# HTML ファイルはキャッシュなし
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# CSS・JS ファイルは長期キャッシュ
+[[headers]]
+  for = "/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/script.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# 画像ファイルは長期キャッシュ
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
