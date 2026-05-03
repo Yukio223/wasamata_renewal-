@@ -1,2 +1,24 @@
+# WASAMATA HUTTE robots.txt
+# Search Engine Crawling Instructions
+
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /images/
+Disallow: /_next/
+Disallow: /api/
+
+# Crawl delay (seconds)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://wasamata-hutte.com/sitemap.xml
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /

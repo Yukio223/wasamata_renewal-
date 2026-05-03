@@ -148,4 +148,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.bg-alt').forEach(el => bgAltObserver.observe(el));
 
+  // ========== Accordion ==========
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const isExpanded = header.getAttribute('aria-expanded') === 'true';
+      const content = header.nextElementSibling;
+
+      accordionHeaders.forEach(h => {
+        h.setAttribute('aria-expanded', 'false');
+        h.nextElementSibling.setAttribute('aria-hidden', 'true');
+      });
+
+      if (!isExpanded) {
+        header.setAttribute('aria-expanded', 'true');
+        content.setAttribute('aria-hidden', 'false');
+      }
+    });
+  });
+
 });
