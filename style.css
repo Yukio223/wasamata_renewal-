@@ -41,7 +41,8 @@
 
   /* レイアウト */
   --container:       1100px;
-  --section-padding: 80px 0;    /* モバイル基準 */
+  --section-padding: 100px 0;   /* セクション間余白 */
+  --grid-gap:        32px;      /* セクション内要素間隔 */
 }
 
 html {
@@ -100,7 +101,11 @@ img {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.menu .section-label {
+  margin-bottom: 20px;
 }
 
 .section-label.light {
@@ -112,6 +117,7 @@ img {
   font-size: var(--font-xl);
   font-weight: 500;
   line-height: 1.7;
+  margin-top: 0;
   margin-bottom: 36px;
   letter-spacing: 0.06em;
 }
@@ -486,7 +492,7 @@ body.in-bg-alt .sidebar-icon {
 .hours-grid {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--grid-gap);
 }
 
 .hours-card {
@@ -522,7 +528,7 @@ body.in-bg-alt .sidebar-icon {
 .feature-cards {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--grid-gap);
 }
 
 /* ========================================
@@ -536,7 +542,7 @@ body.in-bg-alt .sidebar-icon {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+  gap: 16px;
 }
 
 .gallery-item {
@@ -758,6 +764,14 @@ body.in-bg-alt .sidebar-icon {
 }
 
 /* ========================================
+   キャンプ場
+   ======================================== */
+.campsite {
+  padding: var(--section-padding);
+  background: #f9f7f4;
+}
+
+/* ========================================
    予約（CTA）
    ======================================== */
 .reserve {
@@ -913,7 +927,7 @@ body.in-bg-alt .sidebar-icon {
    ======================================== */
 @media (min-width: 600px) {
   :root {
-    --section-padding: 96px 0;
+    --section-padding: 100px 0;
   }
 
   .container { padding: 0 32px; }
@@ -953,7 +967,7 @@ body.in-bg-alt .sidebar-icon {
   /* ギャラリー */
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 16px;
   }
 
   /* Info マップ */
@@ -965,7 +979,7 @@ body.in-bg-alt .sidebar-icon {
    ======================================== */
 @media (min-width: 900px) {
   :root {
-    --section-padding: 120px 0;
+    --section-padding: 100px 0;
   }
 
   .container { padding: 0 48px; }
@@ -1397,7 +1411,7 @@ body.in-bg-alt .sidebar-icon {
   padding: 60px 20px 40px;
   background: var(--color-bg-alt);
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .page-header h1 {
@@ -1437,7 +1451,7 @@ body.in-bg-alt .sidebar-icon {
   gap: 8px;
   color: var(--color-accent);
   text-decoration: none;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   transition: gap 0.3s;
   font-size: var(--font-base);
 }

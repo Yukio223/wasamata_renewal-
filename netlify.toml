@@ -39,3 +39,9 @@
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Basic Auth （ユーザー名: wasamata / パスワード: preview2026）
+[[headers]]
+  for = "/*"
+  [headers.values]
+    WWW-Authenticate = 'Basic realm="WASAMATA HUTTE Preview"'
